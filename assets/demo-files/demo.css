@@ -5,8 +5,8 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #555;
-  background: #fff;
-}
+  background: rgb(117, 170, 206);
+}/*background: #fff;*/
 h1 {
   font-size: 1.5em;
   font-weight: normal;

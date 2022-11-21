@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 ul {
-    list-style: none;
+    list-style: none; 
 }
 
 a {
@@ -24,14 +24,22 @@ img {
 /* colors*/
  --hue: 350;
  /* HSL color mode */
---base-color: hsl(var(--hue) 36% 57%);
---base-color-second: hsl(var(--hue) 65% 88%);
---base-color-alt: hsl(var(--hue) 57% 53%);
---title-color: hsl(var(--hue) 41% 10%);
---text-color: hsl(0 0% 46%);
---text-color-light: hsl(0 0% 98%);
---body-color:hsl(0 0% 98%)
+ --base-color: hsl(181, 29%, 74%);
+ --base-color-second: hsl(238, 29%, 39%);
+ --base-color-alt: hsl(var(--hue) 57% 53%);
+ --title-color: hsl(var(--hue) 41% 10%);
+ --text-color:#d6a15c
+ --text-color-light: hsl(0 0% 98%);
+ --body-color:hsl(34, 60%, 60%)
+/*--base-color: hsl(var(--hue) 36% 57%);
+ --base-color-second: hsl(var(--hue) 65% 88%);
+ --base-color-alt: hsl(var(--hue) 57% 53%);
+ --title-color: hsl(var(--hue) 41% 10%);
+ --text-color: hsl(0 0% 46%);
+ --text-color-light: hsl(0 0% 98%);
+ --body-color:hsl(0 0% 98%)
 
+ hsl(181, 29%, 74%)*/
 /* FONTS */
 
 --title-font-size: 1.875rem;
@@ -263,7 +271,7 @@ nav.show div .icon-cancel-circle {
 
 /*------HOME--------*/
 #home {
-    overflow: hidden;
+    overflow: black;
 }
 
 #home .container {
@@ -347,75 +355,241 @@ nav.show div .icon-cancel-circle {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+/* ------ Apartamentos ----- */
 
-/*------------SERVICES--------*/
-.cards.grid {
-    gap: 1.5rem;
-}
-
-.card {
-    padding: 3.625rem 2rem;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 08);
-    border-bottom: 0.25rem, solid var(--base-color);
-    border-radius: 0.25rem 0.25rem 0 0;
-    text-align: center;
-}
-.card i {
-    display: block;
-    margin-bottom: 1.5rem;
-    font-size: 5rem;
-    color: var(--base-color);
-}
-
-.card .title {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-/* ---------TESTIMONIALS------*/
-
-#testimonials {
+#apartaments {
     background: white;
 }
 
-#testimonials .container {
-    margin-left: 0;
-    margin-right: 0;
+#apartaments .container {
+    margin: 0;
 }
 
-#testimonials header {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 0;
+#apartaments .image {
+    position: relative;
 }
 
-#testimonials blockquote {
-    padding: 2rem;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 08);
+#apartaments .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+}
+
+#apartaments .image img{
+    position: relative;
+}
+
+#apartaments .image img,
+#apartaments .image::before {
     border-radius: 0.25rem;
 }
 
-#testimonials blockquote p {
+#apartaments .text {
+    margin-left: 3.0rem;
+    margin-right: 3.0rem;
+}
+
+/*--------SPA --------*/
+#spa {
+    overflow: hidden;
+}
+
+#spa .container {
+    margin: 0;
+}
+
+#spa .image {
     position: relative;
-    text-indent: 1.875rem;
-    margin-bottom: 1.5rem;
-    color: var(--title-color);
 }
 
-#testimonials blockquote p span {
-    font: 700 2.5rem serif;
+#spa .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
     position: absolute;
-    top: -0.375rem;
-    left: -1.875rem;
-    color: var(--base-color);
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
 }
 
-#testimonials cite img {
-    width: 2rem;
-    height: 2rem;
-    object-fit: cover;
-    clip-path: circle();
-    margin-right: 0.5rem;
+#spa .image img{
+    position: relative;
+    right: 2.93rem;
+}
+
+#spa .image img,
+#spa .image::before {
+    border-radius: 0.25rem;
+}
+
+#spa .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*-------RECREAÇÃO---------*/
+#recreacao {
+    overflow: hidden;
+}
+
+#recreacao .container {
+    margin: 0;
+}
+
+#recreacao .image {
+    position: relative;
+}
+
+#recreacao .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#recreacao .image img{
+    position: relative;
+    right: 2.93rem;
+}
+
+#recreacao .image img,
+#recreacao .image::before {
+    border-radius: 0.25rem;
+}
+
+#recreacao .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*-----bar/restaurante-----*/
+
+#barestaurante {
+    overflow: hidden;
+}
+
+#barestaurante .container {
+    margin: 0;
+}
+
+#barestaurante .image {
+    position: relative;
+}
+
+#barestaurante .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#barestaurante .image img{
+    position: relative;
+    right: 2.93rem;
+}
+
+#barestaurante .image img,
+#barestaurante .image::before {
+    border-radius: 0.25rem;
+}
+
+#barestaurante .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*-----eventosreunioes-----*/
+
+#eventosreunioes {
+    overflow: hidden;
+}
+
+#eventosreunioes .container {
+    margin: 0;
+}
+
+#eventosreunioes .image {
+    position: relative;
+}
+
+#eventosreunioes .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#eventosreunioes .image img{
+    position: relative;
+    right: 2.93rem;
+}
+
+#eventosreunioes .image img,
+#eventosreunioes .image::before {
+    border-radius: 0.25rem;
+}
+
+#eventosreunioes .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/*-----bar/restaurante-----*/
+
+#barestaurante {
+    overflow: hidden;
+}
+
+#barestaurante .container {
+    margin: 0;
+}
+
+#barestaurante .image {
+    position: relative;
+}
+
+#barestaurante .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#barestaurante .image img{
+    position: relative;
+    right: 2.93rem;
+}
+
+#barestaurante .image img,
+#barestaurante .image::before {
+    border-radius: 0.25rem;
+}
+
+#barestaurante .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 /*-------SWIPER-----------*/
